@@ -31,4 +31,3 @@ $ cd src
 $ npm install
 $ node ./bin/setup.js
 ```
-
