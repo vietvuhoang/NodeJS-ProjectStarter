@@ -1,0 +1,27 @@
+<div class="header-right">
+	<ul class="headermenu">
+		<li ng-repeat="item in toolbarItems">
+			<div class="btn-group">
+				<a href="#!{{item.route}}" ng-if="!item.isMyProfile && !item.isLogout">
+					<button class="btn btn-default dropdown-toggle tp-icon {{item.isActivated ? 'tb-active' : ''}}">
+              <i class="{{item.icon}}"></i>
+          </button>
+				</a>
+				<!-- My Profile -->
+				<a href="#!{{item.route}}" ng-if="item.isMyProfile">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              <img src="{{currUser.avatarUrl}}" alt="" />
+              {{currUser.fullName}}
+            </button>
+				</a>
+				<!-- My Logout -->
+				<a href="" ng-if="item.isLogout">
+					<button class="btn btn-default dropdown-toggle tp-icon {{item.isActivated ? 'tb-active' : ''}}" ng-click="onLogout();">
+              <i class="{{item.icon}}"></i>
+          </button>
+				</a>
+			</div>
+		</li>
+	</ul>
+</div>
+<!-- header-right -->

@@ -1,0 +1,12 @@
+*node_modules
+*bower_components
+*app-config.json
+*datasources.json
+*.idea
+*.DS_Store
+*.editorconfig
+*.vscode
+*logs
+*~lock*
+*logs*
+*swp

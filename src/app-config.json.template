@@ -1,0 +1,28 @@
+{
+  "title" : "Hello NodeJS",
+  "redis": {
+      "host" : "REDIS_HOST",
+      "port" : REDIS_PORT,
+      "db"   : REDIS_DB,
+      "pass" : "REDIS_PASS",
+      "ttl"  : 3600,
+      "disableTTL": false,
+      "prefix" : "REDIS_PREFIX"
+  },
+  "smtp" : {
+      "host" : "SMTP_HOST",
+      "port": SMTP_PORT
+  },
+  "paging" : {
+      "activityLogs": 4
+  },
+  "dateFormat" : {
+      "datetime": "dd-mm-yy HH:MM",
+      "date": "mmm dd,yyyy",
+      "time": "HH:MM:ss"
+  },
+  "media": {
+  },
+  "logs" : "LOG_FOLDER",
+  "tokenExpired" : "7 d"
+}

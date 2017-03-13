@@ -1,0 +1,12 @@
+{
+  "NodeJSApp": {
+    "host": "DB_HOST",
+    "port": DB_PORT,
+    "url": "",
+    "database": "DB_NAME",
+    "password": "DB_PASS",
+    "name": "NodeJSApp",
+    "user": "DB_USER",
+    "connector": "DB_TYPE"
+  }
+}
